@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 225f221 (Initial clean commit after Git reset)
 document.addEventListener("DOMContentLoaded", function () {
     var MenuItems = document.getElementById("MenuItems");
 
@@ -38,3 +42,21 @@ for (let i = 0; i < smallImgs.length; i++) {
         productImg.src = smallImgs[i].src;
     }
 }
+<<<<<<< HEAD
+=======
+=======
+document.addEventListener("DOMContentLoaded", function () {
+    var MenuItems = document.getElementById("MenuItems");
+
+    function menutoggle() {
+        if (MenuItems.style.maxHeight === "0px" || MenuItems.style.maxHeight === "") {
+            MenuItems.style.maxHeight = "200px"; // Expand menu
+        } else {
+            MenuItems.style.maxHeight = "0px"; // Collapse menu
+        }
+    }
+
+    document.querySelector(".menu-icon").addEventListener("click", menutoggle);
+});
+>>>>>>> a3efaf5 (Initial commit)
+>>>>>>> 225f221 (Initial clean commit after Git reset)
