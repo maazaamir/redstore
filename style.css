@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 225f221 (Initial clean commit after Git reset)
 *{
     margin: 0;
     padding: 0;
@@ -586,3 +590,365 @@ form .btn:focus{
 form a{
     font-size: 12px;
 }
+<<<<<<< HEAD
+=======
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color:#555;
+}
+p{
+    color: #555;
+    margin-right: 20px;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: space-around;
+
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 30% 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background-color: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+     border-radius: 30px;
+     transition: background 0.5s;
+}
+.btn:hover{
+    background: #563434;
+}
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.header row{
+    margin-top: 70px;
+}
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+    
+}
+
+
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    position: relative;
+    margin: 0 auto 80px;
+    line-height: 80px;
+    color: #555;
+}
+
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.rating .span{
+    color: #ff523b;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+.offer{
+    background: radial-gradient(#fff,#ffd6d6);
+       margin-top: 80px;
+       padding: 30px 0;
+
+}
+.col-2 .offer-img{
+    padding: 50px;
+
+}
+small{
+    color:#333;
+    font-size: 19px;
+}
+.col-2 .row{
+    display: flex;
+}
+
+.testimonial{
+    padding-top: 100px;
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+.testimonial .col-3:hover{
+    transform: translate(-10px);
+}
+.fa fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color:#777;
+}
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+} 
+
+.brands .row {
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.col-5 {
+    flex: 1;
+    width: 160px;
+    text-align: center;
+}
+
+.col-5 img {
+    width: 100%;
+    max-width: 150px; /* Adjust image size */
+    cursor: pointer;
+    filter: grayscale(100%); 
+    transition: filter 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.col-5 img:hover {
+    filter: grayscale(0%); /* Removes grayscale on hover */
+}
+
+.footer{
+    display: flex;
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Aligns items properly */
+}
+
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+/* Reduce the gap between .footer-col-1 and .footer-col-2 */
+.footer-col-1 {
+    flex: 1; /* Adjusted to equal width */
+    max-width: 100%; /* Restricts it from taking too much space */
+}
+
+.footer-col-2 {
+    flex: 1;
+    max-width: 40%; /* Restricts it from spreading too much */
+    text-align: center;
+}
+
+/* Logo styling */
+.footer-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+/* Flexbox for aligning .footer-col-3 and .footer-col-4 side by side */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Reduced gap */
+    flex-wrap: wrap;
+}
+
+.footer-col-3, .footer-col-4 {
+    flex-basis: 12%;
+    min-width: 200px;
+}
+
+/* Remove default list styles for a clean look */
+.footer-col-3 ul, .footer-col-4 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col-3 ul li, .footer-col-4 ul li {
+    margin-bottom: 8px;
+}
+.ul{
+    list-style-type: none;
+}
+.app-logo {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    gap: 10px; /* Adds spacing between elements */
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 140px;
+}
+.copy-right{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.footer hr{
+    border: none;
+    background-color: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100px;
+        max-height: 0; /* Initially hidden */
+        overflow: hidden;
+        transition: max-height 0.5s ease-out; /* Fixed transition */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .menu-icon {
+        display: block; /* Ensure it's visible */
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2,.col-3,.col-4{
+        flex-basis: 100%;
+    }
+}
+>>>>>>> a3efaf5 (Initial commit)
+>>>>>>> 225f221 (Initial clean commit after Git reset)
