@@ -5,278 +5,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Products - RedStore</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <div class="navbar">
-            <img src="/images/logo.png" width="125px">
-            <nav>
-                <ul id="MenuItems">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/products">Products</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/accounts">Accounts</a></li>
-                </ul>
-            </nav>
-            <img src="/images/cart.png" width="30px" height="30px">
-            <img src="/images/menu.png" width="30px" height="30px" class="menu-icon" onclick="menutoggle()">
-        </div>
-        
-       
+
+<!-- ================= NAVBAR ================= -->
+
+<div class="container">
+    <div class="navbar">
+        <img src="images/logo.png" width="125px">
+
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+
+        <img src="images/cart.png" width="30px" height="30px">
+        <img src="images/menu.png" width="30px" height="30px" class="menu-icon">
     </div>
+</div>
 
 
- 
-  <!-- <----featured product-----/> -->
+<!-- ================= PRODUCTS SECTION ================= -->
 
-  <div class="small-container">
+<div class="small-container">
+
     <div class="row row-2">
         <h2>All Products</h2>
-        <select name="" id="">
-            <option>Default Shorting </option>
-            <option>Short by price </option>
-            <option>Short by Popularity </option>
-            <option>Short by rating </option>
-            <option>Short by Sale </option>
+        <select>
+            <option>Default Sorting</option>
+            <option>Sort by Price</option>
+            <option>Sort by Popularity</option>
+            <option>Sort by Rating</option>
+            <option>Sort by Sale</option>
         </select>
-    </div> 
-    <div class="row">
-        <div class="col-4">
-            <img src="/images/product-1.jpg" alt="">
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#10025;</span>
-
-
-
-            </div>
-            <p>$50.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/product-2.jpg" alt="">
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#10025;</span>
-
-
-
-            </div>
-            <p>$50.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/product-3.jpg" alt="">
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#10025;</span>
-
-
-
-            </div>
-            <p>$50.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/product-4.jpg" alt="">
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#10025;</span>
-
-            </div>
-            <p>$50.00</p>
-        </div>
     </div>
-   
 
     <div class="row">
+
+        <!-- Product 1 -->
         <div class="col-4">
-            <img src="/images/product-5.jpg" alt="">
-            <h4>Red Printed T-shirt</h4>
+            <img src="images/product-1.jpg">
+            <h4>Red Printed T-Shirt</h4>
             <div class="rating">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#10025;</span>
-
-
-
+                ★★★☆
             </div>
             <p>$50.00</p>
         </div>
+
+        <!-- Product 2 -->
         <div class="col-4">
-            <img src="/images/product-6.jpg" alt="">
-            <h4>Red Printed T-shirt</h4>
+            <img src="images/product-2.jpg">
+            <h4>Red Printed T-Shirt</h4>
             <div class="rating">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#10025;</span>
-
-
-
+                ★★★☆
             </div>
             <p>$50.00</p>
         </div>
+
+        <!-- Product 3 -->
         <div class="col-4">
-            <img src="/images/product-7.jpg" alt="">
-            <h4>Red Printed T-shirt</h4>
+            <img src="images/product-3.jpg">
+            <h4>Red Printed T-Shirt</h4>
             <div class="rating">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#10025;</span>
-
-
-
+                ★★★☆
             </div>
             <p>$50.00</p>
         </div>
+
+        <!-- Product 4 -->
         <div class="col-4">
-            <img src="/images/product-8.jpg" alt="">
-            <h4>Red Printed T-shirt</h4>
+            <img src="images/product-4.jpg">
+            <h4>Red Printed T-Shirt</h4>
             <div class="rating">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#10025;</span>
-
-
-
+                ★★★☆
             </div>
             <p>$50.00</p>
         </div>
-        <div class="col-4">
-            <img src="/images/product-9.jpg" alt="">
-            <h4>Red Printed Tshirt</h4>
-            <div class="rating">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#10025;</span>
 
-
-
-            </div>
-            <p>$50.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/product-10.jpg" alt="">
-            <h4>Red Printed Tshirt</h4>
-            <div class="rating">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#10025;</span>
-
-
-
-            </div>
-            <p>$50.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/product-11.jpg" alt="">
-            <h4>Red Printed Tshirt</h4>
-            <div class="rating">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#10025;</span>
-
-
-
-            </div>
-            <p>$50.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/product-12.jpg" alt="">
-            <h4>Red Printed Tshirt</h4>
-            <div class="rating">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#10025;</span>
-
-
-
-            </div>
-            <p>$50.00</p>
-        </div>
     </div>
-  <div class="page-btn">
-    <span>1</span>
-    <span>2</span>
-    <span>3</span>
-    <span>4</span>
-    <span>....</span>
-  </div>
-  </div>
-                 
-               
-                  </div>
 
-                 
+</div>
 
-                <div class="footer">
-                    <div class="container">
-                        <div class="row">
-                            <div class="footer-col-1">
-                                <h2>Download Our App</h2>
-                                <p>Download App for Android and iOS mobile phones.</p>
-                                <div class="app-logo">
-                                    <img src="/images/play-store.png">
-                                    <img src="/images/app-store.png">
 
-                                </div>
-                            </div>
-                            <div class="footer-col-2">
-                                <img src="/images/logo-white.png" alt="Logo">
-                                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of 
-                                    Sports Accessible to the Many</p>
-                            </div>
-                            <!-- Wrapper div to align footer-col-3 and footer-col-4 side by side -->
-                            <div class="footer-links">
-                                <div class="footer-col-3">
-                                    <h3>Useful Links</h3>
-                                    <ul>
-                                        <li>Coupons</li>
-                                        <li>Blog Post</li>
-                                        <li>Return Policy</li>
-                                        <li>Join Affiliate</li>
-                                    </ul>
-                                </div>
-                                <div class="footer-col-4">
-                                    <h3>Follow Us</h3>
-                                    <ul>
-                                        <li>Facebook</li>
-                                        <li>Twitter</li>
-                                        <li>Instagram</li>
-                                        <li>YouTube</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <p class="copy-right">Copyright 2025 - Maaz Aamir</p>
-                    </div>
+<!-- ================= FOOTER ================= -->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="footer-col-1">
+                <h2>Download Our App</h2>
+                <p>Download App for Android and iOS mobile phones.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
                 </div>
-                <script>
-                    
-                </script>
-                 <script src="script.js"></script>
+            </div>
+
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>
+                    Our Purpose Is To Sustainably Make the Pleasure 
+                    and Benefits of Sports Accessible to the Many
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+        <p class="copy-right">Copyright 2025 - Maaz Aamir</p>
+
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
