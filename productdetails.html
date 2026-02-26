@@ -1,241 +1,269 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Products - RedStore</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Details - RedStore</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+.container{
+    max-width:1300px;
+    margin:auto;
+    padding:0 25px;
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 0;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#555;
+    font-weight:500;
+}
+
+.small-container{
+    max-width:1080px;
+    margin:auto;
+    padding:40px 25px;
+}
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.col-2{
+    flex:1 1 450px;
+}
+
+.col-2 img{
+    width:100%;
+}
+
+.small-img-row{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+}
+
+.small-img-col{
+    flex:1;
+    cursor:pointer;
+}
+
+.small-img-col img{
+    width:100%;
+    border:1px solid #ddd;
+}
+
+select, input{
+    padding:8px;
+    margin:10px 0;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff523b;
+    color:#fff;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:6px;
+    margin-top:10px;
+}
+
+.col-4{
+    flex:1 1 200px;
+    text-align:center;
+}
+
+.col-4 img{
+    width:100%;
+}
+
+.footer{
+    background:#000;
+    color:#8a8a8a;
+    padding:40px 0;
+    margin-top:50px;
+}
+
+.footer .row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.copy-right{
+    text-align:center;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+    nav ul{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .row{
+        flex-direction:column;
+    }
+}
+</style>
 </head>
 
 <body>
+
+<div class="container">
+    <div class="navbar">
+        <img src="images/logo.png" width="125px">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productdetails.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+
+        <img src="images/cart.png" width="30px">
+    </div>
+</div>
+
+<div class="small-container">
+    <div class="row">
+
+        <div class="col-2">
+            <img src="images/gallery-1.jpg" id="productImg">
+
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/gallery-1.jpg" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-2.jpg" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-3.jpg" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-4.jpg" class="small-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <p>Home / T-Shirt</p>
+            <h1>Red Printed T-Shirt by HRX</h1>
+            <h4>$50.00</h4>
+
+            <select>
+                <option>Select Size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>Large</option>
+                <option>Medium</option>
+                <option>Small</option>
+            </select>
+
+            <input type="number" value="1">
+            <br>
+            <a href="#" class="btn">Add to Cart</a>
+
+            <h3 style="margin-top:20px;">Product Details</h3>
+            <p>
+                Give your summer wardrobe a style upgrade with HRX Men's Active T-shirt.
+                Team it with shorts for workouts or denims for outings.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<div class="small-container">
+    <h2>Related Products</h2>
+    <div class="row">
+
+        <div class="col-4">
+            <img src="images/product-9.jpg">
+            <h4>Red Printed Tshirt</h4>
+            <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/product-10.jpg">
+            <h4>Red Printed Tshirt</h4>
+            <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/product-11.jpg">
+            <h4>Red Printed Tshirt</h4>
+            <p>$50.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="images/product-12.jpg">
+            <h4>Red Printed Tshirt</h4>
+            <p>$50.00</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
     <div class="container">
-        <div class="navbar">
-            <img src="/images/logo.png" width="125px">
-            <nav>
-                <ul id="MenuItems">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/productdetails.html">Products</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/account.html">Accounts</a></li>
-                </ul>
-            </nav>
-            <img src="/images/cart.png" width="30px" height="30px">
-            <img src="/images/menu.png" width="30px" height="30px" class="menu-icon" onclick="menutoggle()">
-        </div>
-
-
-    </div>
-    <div class="small-container single-products">
         <div class="row">
-            <div class="col-2">
-                <img src="/images/gallery-1.jpg" width="100%" id="productImg">
-
-                <div class="small-img-row">
-                    <div class="small-img-col">
-                        <img src="/images/gallery-1.jpg" width="100%" class="small-img">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="/images/gallery-2.jpg" width="100%" class="small-img">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="/images/gallery-3.jpg" width="100%" class="small-img">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="/images/gallery-4.jpg" width="100%" class="small-img">
-                    </div>
-                </div>
+            <div>
+                <h2>Download Our App</h2>
+                <p>Download App for Android and iOS mobile phones.</p>
             </div>
-
-            <div class="col-2">
-                <p>Home / T-Shirt</p>
-                <h1>Red printed T-Shirt by HRX</h1>
-                <h4>$50.00</h4>
-                <select>
-                    <option>Select Size</option>
-                    <option>XXL</option>
-                    <option>XL</option>
-                    <option>Large</option>
-                    <option>Medium</option>
-                    <option>Small</option>
-                </select>
-                <input type="number" value="1">
-                <a href="" class="btn">Add to Cart</a>
-                <h3>Product Details<i class="fa fa-indent"></i></h3>
-                <p>Give your summer wordrobe a style upgrade with HRX Men's Active T-shirt .Team it with a pair of
-                    shorts for your morning workout or denims for the evening out for the boys.</p>
+            <div>
+                <img src="images/logo-white.png" width="120">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many</p>
             </div>
         </div>
+        <hr>
+        <p class="copy-right">Copyright 2025 - Maaz Aamir</p>
     </div>
-       <div class="small-container">
-        <div class="row row-2">
-            <h2>Related Products</h2>
-            <p>View More</p>
-        </div>
-       </div>
+</div>
 
-    <!-- <----featured product-----/> -->
+<script>
+const productImg = document.getElementById("productImg");
+const smallImgs = document.querySelectorAll(".small-img");
 
-    <div class="small-container">
-
-
-
-        <div class="row">
-
-
-
-
-            <div class="col-4">
-                <img src="/images/product-9.jpg" alt="">
-                <h4>Red Printed Tshirt</h4>
-                <div class="rating">
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#10025;</span>
-
-
-
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="/images/product-10.jpg" alt="">
-                <h4>Red Printed Tshirt</h4>
-                <div class="rating">
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#10025;</span>
-
-
-
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="/images/product-11.jpg" alt="">
-                <h4>Red Printed Tshirt</h4>
-                <div class="rating">
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#10025;</span>
-
-
-
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="/images/product-12.jpg" alt="">
-                <h4>Red Printed Tshirt</h4>
-                <div class="rating">
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#10025;</span>
-
-
-
-                </div>
-                <p>$50.00</p>
-            </div>
-        </div>
-
-    </div>
-
-
-    </div>
-
-
-
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h2>Download Our App</h2>
-                    <p>Download App for Android and iOS mobile phones.</p>
-                    <div class="app-logo">
-                        <img src="/images/play-store.png">
-                        <img src="/images/app-store.png">
-
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="/images/logo-white.png" alt="Logo">
-                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of
-                        Sports Accessible to the Many</p>
-                </div>
-                <!-- Wrapper div to align footer-col-3 and footer-col-4 side by side -->
-                <div class="footer-links">
-                    <div class="footer-col-3">
-                        <h3>Useful Links</h3>
-                        <ul>
-                            <li>Coupons</li>
-                            <li>Blog Post</li>
-                            <li>Return Policy</li>
-                            <li>Join Affiliate</li>
-                        </ul>
-                    </div>
-                    <div class="footer-col-4">
-                        <h3>Follow Us</h3>
-                        <ul>
-                            <li>Facebook</li>
-                            <li>Twitter</li>
-                            <li>Instagram</li>
-                            <li>YouTube</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <p class="copy-right">Copyright 2025 - Maaz Aamir</p>
-        </div>
-    </div>
-    <script>
-
-    </script>
-    <script src="script.js"></script>
-
-    <script>
-        var  productImg = document.getElementById("productImg");
-var smallImg = document.getElementById("small-img")
-
-smallImg[0].onclick = function()
-{
-    productImg.src = smallImg[0].src;
-}
-smallImg[1].onclick = function()
-{
-    productImg.src = smallImg[1].src;
-}
-smallImg[2].onclick = function()
-{
-    productImg.src = smallImg[2].src;
-}
-smallImg[3].onclick = function()
-{
-    productImg.src = smallImg[3].src;
-}
-var productImg = document.getElementById("productImg");
-var smallImgs = document.querySelectorAll(".small-img");
-
-smallImgs.forEach(function(img) {
-    img.onclick = function() {
+smallImgs.forEach(img => {
+    img.addEventListener("click", () => {
         productImg.src = img.src;
-    }
+    });
 });
+</script>
 
-
-    </script>
 </body>
+</html>

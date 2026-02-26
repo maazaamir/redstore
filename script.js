@@ -1,14 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    /* ===============================
-       MOBILE MENU TOGGLE
-    =============================== */
-
     const MenuItems = document.getElementById("MenuItems");
     const menuIcon = document.querySelector(".menu-icon");
 
     if (MenuItems) {
-        MenuItems.style.maxHeight = "0px"; // Start collapsed
+        MenuItems.style.maxHeight = "0px";
     }
 
     function menutoggle() {
@@ -22,11 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (menuIcon) {
         menuIcon.addEventListener("click", menutoggle);
     }
-
-
-    /* ===============================
-       PRODUCT IMAGE GALLERY
-    =============================== */
 
     const productImg = document.getElementById("productImg");
     const smallImgs = document.getElementsByClassName("small-img");
